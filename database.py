@@ -19,7 +19,7 @@ from pymongo import ReturnDocument
 
 logger = logging.getLogger(__name__)
 
-MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://Ritik:Ritikraj@ritikraj.cciyuco.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.getenv("DB_NAME", "escrow_bot")
 
 _client: Optional[AsyncIOMotorClient] = None
